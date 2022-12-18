@@ -1,5 +1,5 @@
 # Library-Management
-A **Library-Management-System** designed with the **QT C++ framework** that provides libraries with a useful software to perform essential tasks using a GUI. The software comprises of a menu-driven GUI interface styled with the Windows Fluent Design as its base. Its backend comprises a **SQLite database** containing 4 tables: *books*, *users*, *issued_books* and *classification_numbers (for the books)*. The application offers the following functionalities:
+A **Library-Management-System** designed with the **QT C++ framework** that provides libraries with a useful software to perform essential tasks using a GUI. The software comprises of a menu-driven GUI interface styled with the **Windows Fluent Design** as its base. Its backend comprises a **SQLite database** containing 4 tables: *books*, *users*, *issued_books* and *classification_numbers (for the books)*. The application offers the following functionalities:
 - Add, edit, search and delete a book in the *books* table
 - Add, edit, search and delete a user in the *users* table
 - Issue and return a book
