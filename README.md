@@ -6,16 +6,18 @@ A **Library-Management-System** designed with the **QT C++ framework** that prov
 - Print the list of books, users, issued books and overdue books
 - Export the list of books, users, issued_books and overdue books as a csv file
 
+<img src="https://github.com/Jishnu8/Library-Management/blob/main/data/library_management.png" width="700" height="Auto">
+
 ## Build
-Clone Repository
+#### 1. Clone Repository
 ```
 git clone https://github.com/Jishnu8/Library-Management
 ```
-Create build directory
+#### 2. Create build directory
 ```
 mkdir build
 ```
-Configure and Build
+#### 3. Configure and Build
 
 a) Using CMake
 ```
@@ -27,7 +29,7 @@ b) Using qmake
 qmake $path_to_LibraryManagement.pro
 make
 ```
-Run Executable
+#### 4. Run Executable
 ```
 ./LibraryManagement
 ```
