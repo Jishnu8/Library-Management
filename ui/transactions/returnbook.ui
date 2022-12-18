@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReturnBook</class>
+ <widget class="QMainWindow" name="ReturnBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>371</width>
+    <height>146</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Return Book</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #1C1C1C;
+}
+
+QLineEdit{
+	background-color: #2F2F2F;
+	border-radius: 3px;
+	color: white;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #979797;
+}
+
+QLineEdit:focus{
+	border-color: #60CDFF;
+}
+
+QPushButton
+{
+    color: white;
+    font-size: 15px;
+    background-color: #292929;
+    border-radius: 5px;
+    font-family: &quot;Noto Sans&quot;
+}
+
+QPushButton::hover{ 
+    background-color: #2F2F2F;
+}
+
+QPushButton:pressed{
+    border-width: 1px;
+    border-style: solid;
+	border-color: white;
+}
+
+QLabel
+{
+    color: white;
+	font-size: 16px;
+    font-family: &quot;Noto Sans&quot;;l
+    border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>110</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Return Date</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtReturnDate">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>90</y>
+      <width>106</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Return</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cancelButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>106</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

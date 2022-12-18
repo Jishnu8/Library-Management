@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>815</width>
+    <height>535</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>825</width>
+    <height>575</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Library Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>815</width>
+     <height>549</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>825</width>
+     <height>549</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>531</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    color: white;
+    border-radius: 5px;
+    background-color: #292929;
+    font-family: &quot;Noto Sans&quot;;
+    font-size: 35px
+}</string>
+    </property>
+    <property name="text">
+     <string>Library Management System</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>240</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #292929;
+    border-radius: 5px;
+    font-family: &quot;Noto Sans&quot;;
+    color: white;
+}
+
+QPushButton::hover{ 
+    background-color: #2F2F2F;
+}
+
+QPushButton:pressed{
+    border-width: 1px;
+    border-style: solid;
+	border-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Issue Book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>310</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #292929;
+    border-radius: 5px;
+    font-family: &quot;Noto Sans&quot;;
+    color: white;
+}
+
+QPushButton::hover{ 
+    background-color: #2F2F2F;
+}
+
+QPushButton:pressed{
+    border-width: 1px;
+    border-style: solid;
+	border-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Return Book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quitButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>380</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #292929;
+    border-radius: 5px;
+    font-family: &quot;Noto Sans&quot;;
+    color: white;
+}
+
+QPushButton::hover{ 
+    background-color: #2F2F2F;
+}
+
+QPushButton:pressed{
+    border-width: 1px;
+    border-style: solid;
+	border-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>815</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenu {
+    background-color: #292929; /* sets background of the menu */
+}
+
+ QMenu::item{
+     background-color: #292929;
+     color: white;
+     font-family: &quot;Noto Sans&quot;;
+	 font-size: 16px;
+     padding: 2px 25px 2px 10px;
+     border: 1px solid transparent; /* reserve space for selection border */
+     spacing: 20px;
+ }
+
+QMenu::item:selected { 
+ 	 background-color: #2F2F2F;
+}
+
+QMenuBar{
+	background-color: #292929;
+    color: white;
+	spacing: 8px;
+    font-size: 15px;
+    padding: 5px;
+    font-family: &quot;Noto Sans&quot;
+}
+
+QMenuBar:selected{
+    background-color: #2F2F2F;
+}
+
+QMenuBar::item:pressed{
+    background-color: #232323;
+}
+</string>
+   </property>
+   <widget class="QMenu" name="Books">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Books</string>
+    </property>
+    <addaction name="addBook"/>
+    <addaction name="editBook"/>
+    <addaction name="searchBook"/>
+    <addaction name="deleteBook"/>
+   </widget>
+   <widget class="QMenu" name="Users">
+    <property name="title">
+     <string>Users</string>
+    </property>
+    <addaction name="addUser"/>
+    <addaction name="editUser"/>
+    <addaction name="searchUser"/>
+    <addaction name="deleteUser"/>
+   </widget>
+   <widget class="QMenu" name="Transations">
+    <property name="title">
+     <string>Transations</string>
+    </property>
+    <addaction name="issueBook"/>
+    <addaction name="actionReturn_Book"/>
+    <addaction name="actionEdit_3"/>
+   </widget>
+   <widget class="QMenu" name="Records">
+    <property name="title">
+     <string>Records</string>
+    </property>
+    <widget class="QMenu" name="menuBooks">
+     <property name="title">
+      <string>Books</string>
+     </property>
+     <widget class="QMenu" name="menuPrint">
+      <property name="title">
+       <string>Print</string>
+      </property>
+      <addaction name="print_by_Id"/>
+      <addaction name="print_by_author"/>
+      <addaction name="print_by_book"/>
+     </widget>
+     <widget class="QMenu" name="menuExport_as_csv">
+      <property name="title">
+       <string>Export as csv</string>
+      </property>
+      <addaction name="csv_by_Id"/>
+      <addaction name="csv_by_authorName"/>
+      <addaction name="csv_by_bookName"/>
+     </widget>
+     <addaction name="menuPrint"/>
+     <addaction name="menuExport_as_csv"/>
+    </widget>
+    <widget class="QMenu" name="menuUsers">
+     <property name="title">
+      <string>Users</string>
+     </property>
+     <widget class="QMenu" name="menuPrint_2">
+      <property name="title">
+       <string>Print</string>
+      </property>
+      <addaction name="printUsersById"/>
+      <addaction name="printUsersByName"/>
+     </widget>
+     <widget class="QMenu" name="menuExport_as_csv_2">
+      <property name="title">
+       <string>Export as csv</string>
+      </property>
+      <addaction name="csvExportUsersById"/>
+      <addaction name="csvExportUsersByName"/>
+     </widget>
+     <addaction name="menuPrint_2"/>
+     <addaction name="menuExport_as_csv_2"/>
+    </widget>
+    <widget class="QMenu" name="menuIssued_Books">
+     <property name="title">
+      <string>Issued Books</string>
+     </property>
+     <addaction name="print_issued_books"/>
+     <addaction name="export_as_csv_issued_books"/>
+    </widget>
+    <widget class="QMenu" name="menuOverdue_Books">
+     <property name="title">
+      <string>Overdue Books</string>
+     </property>
+     <addaction name="print_overdue_books"/>
+     <addaction name="export_as_csv_overdue_books"/>
+    </widget>
+    <addaction name="menuBooks"/>
+    <addaction name="menuUsers"/>
+    <addaction name="menuIssued_Books"/>
+    <addaction name="menuOverdue_Books"/>
+   </widget>
+   <addaction name="Books"/>
+   <addaction name="Users"/>
+   <addaction name="Transations"/>
+   <addaction name="Records"/>
+  </widget>
+  <action name="addBook">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="editBook">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="searchBook">
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="deleteBook">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="printBook">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="addUser">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="editUser">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="searchUser">
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="deleteUser">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionPrint_2">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="issueBook">
+   <property name="text">
+    <string>Issue Book</string>
+   </property>
+  </action>
+  <action name="actionReturn_Book">
+   <property name="text">
+    <string>Return Book</string>
+   </property>
+  </action>
+  <action name="actionEdit_3">
+   <property name="text">
+    <string>Edit </string>
+   </property>
+  </action>
+  <action name="actionAdd_3">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionEdit_4">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionSearch_3">
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="actionDelete_3">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionPrint_3">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="print_issued_books">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="export_as_csv_issued_books">
+   <property name="text">
+    <string>Export as csv</string>
+   </property>
+  </action>
+  <action name="print_overdue_books">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="export_as_csv_overdue_books">
+   <property name="text">
+    <string>Export as csv</string>
+   </property>
+  </action>
+  <action name="actionPrint_7">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionExport_as_csv_5">
+   <property name="text">
+    <string>Export as csv</string>
+   </property>
+  </action>
+  <action name="print_by_Id">
+   <property name="text">
+    <string>By ID</string>
+   </property>
+  </action>
+  <action name="print_by_author">
+   <property name="text">
+    <string>By Author Name</string>
+   </property>
+  </action>
+  <action name="print_by_book">
+   <property name="text">
+    <string>By Book Name</string>
+   </property>
+  </action>
+  <action name="csv_by_Id">
+   <property name="text">
+    <string>By ID</string>
+   </property>
+  </action>
+  <action name="csv_by_authorName">
+   <property name="text">
+    <string>By Author Name</string>
+   </property>
+  </action>
+  <action name="csv_by_bookName">
+   <property name="text">
+    <string>By Book Name</string>
+   </property>
+  </action>
+  <action name="actionBy_Id">
+   <property name="text">
+    <string>By ID</string>
+   </property>
+  </action>
+  <action name="byId">
+   <property name="text">
+    <string>By Author Name</string>
+   </property>
+  </action>
+  <action name="actionBy_Book">
+   <property name="text">
+    <string> By Book Name</string>
+   </property>
+  </action>
+  <action name="printUsersById">
+   <property name="text">
+    <string>By ID</string>
+   </property>
+  </action>
+  <action name="printUsersByName">
+   <property name="text">
+    <string>By Name</string>
+   </property>
+  </action>
+  <action name="csvExportUsersById">
+   <property name="text">
+    <string>By ID</string>
+   </property>
+  </action>
+  <action name="csvExportUsersByName">
+   <property name="text">
+    <string>By Name</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

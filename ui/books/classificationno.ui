@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClassificationNo</class>
+ <widget class="QMainWindow" name="ClassificationNo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="classificationNoTable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>751</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView{
+	background: #292929;
+	gridline-color: &quot;white&quot;;
+	color: &quot;white&quot;;
+}
+
+QTableView::item:hover{
+	background-color: #2F2F2F
+}
+
+QTableView::item:selected{
+	background-color: #232323;
+}
+
+
+QHeaderView{
+	background: #292929;
+	gridline-color: &quot;white&quot;;
+	color: &quot;white&quot;
+}</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>250</number>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageBox</class>
+ <widget class="QMainWindow" name="MessageBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>74</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #1C1C1C;
+}
+
+QLineEdit{
+	background-color: #2F2F2F;
+	border-radius: 3px;
+	color: white;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #979797;
+}
+
+QLineEdit:focus{
+	border-color: #60CDFF;
+}
+
+QPushButton
+{
+    color: white;
+    font-size: 15px;
+    background-color: #292929;
+    border-radius: 5px;
+    font-family: &quot;Noto Sans&quot;
+}
+
+QPushButton::hover{ 
+    background-color: #2F2F2F;
+}
+
+QPushButton:pressed{
+    border-width: 1px;
+    border-style: solid;
+	border-color: white;
+}
+
+QLabel
+{
+    color: white;
+	font-size: 16px;
+    font-family: &quot;Noto Sans&quot;;l
+    border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="text">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="okButton">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>40</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>×</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Success</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>35</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

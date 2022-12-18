@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchUser</class>
+ <widget class="QMainWindow" name="SearchUser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Search User</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: #1C1C1C;
+}
+
+QLineEdit{
+	background-color: #2F2F2F;
+	border-radius: 3px;
+	color: white;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #979797;
+}
+
+QLineEdit:focus{
+	border-color: #60CDFF;
+}
+
+QPushButton
+{
+    color: white;
+    font-size: 15px;
+    background-color: #292929;
+    border-radius: 5px;
+    font-family: &quot;Noto Sans&quot;
+}
+
+QPushButton::hover{ 
+    background-color: #2F2F2F;
+}
+
+QPushButton:pressed{
+    border-width: 1px;
+    border-style: solid;
+	border-color: white;
+}
+
+QLabel
+{
+    color: white;
+	font-size: 16px;
+    font-family: &quot;Noto Sans&quot;;l
+    border-radius: 5px;
+}
+
+QTableView{
+	background: #292929;
+	gridline-color: &quot;white&quot;;
+	color: &quot;white&quot;;
+    font-family: &quot;Noto Sans&quot;
+}
+
+QTableView::item:hover{
+	background-color: #2F2F2F
+}
+
+QTableView::item:selected{
+	background-color: #232323;
+}
+
+
+QHeaderView{
+	background: #292929;
+	gridline-color: &quot;white&quot;;
+	color: &quot;white&quot;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>140</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Access No</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>20</y>
+      <width>140</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Full Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>140</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>80</y>
+      <width>140</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Email Id</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtEmailId">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>80</y>
+      <width>315</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtUsername">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>325</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtFullName">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>20</y>
+      <width>315</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtAccessNo">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>325</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>130</y>
+      <width>106</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="userSearchTable">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>961</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>150</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>46</number>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
